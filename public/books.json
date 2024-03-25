@@ -1,0 +1,121 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "./id-1.jpg",
+    "author": "J. R. R. Tolkien",
+    "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/13277421.jpg",
+    "review": "An epic tale of adventure, fellowship, and the fight against evil. A true classic of fantasy literature.",
+    "totalPages": 492,
+    "rating": 4.5,
+    "category": "Fantasy",
+    "tags": ["Epic", "Adventure", "Friendship"],
+    "publisher": "Allen & Unwin",
+    "yearOfPublishing": 1954
+  },
+  {
+    "bookId": 2,
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "./id-2.jpg",
+    "review": "A witty and insightful social commentary disguised as a romantic comedy. Explores themes of love, class, and societal expectations.",
+    "totalPages": 224,
+    "rating": 4.2,
+    "category": "Romance",
+    "tags": ["Classics", "Social Commentary", "Witty"],
+    "publisher": "T. Egerton",
+    "yearOfPublishing": 1813
+  },
+  {
+    "bookId": 3,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "./id-3.jpg",
+    "review": "A powerful and moving story about racial injustice in the American South as seen through the eyes of a young girl. A timeless classic.",
+    "totalPages": 324,
+    "rating": 4.8,
+    "category": "Fiction",
+    "tags": ["Coming-of-Age", "Social Justice", "Racial Prejudice"],
+    "publisher": "J. B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": 4,
+    "bookName": "Dune",
+    "author": "Frank Herbert",
+    "image": "./id-4.jpg",
+    "review": "A complex and thought-provoking science fiction epic exploring themes of politics, religion, and ecology on a desert planet.",
+    "totalPages": 863,
+    "rating": 4.3,
+    "category": "Science Fiction",
+    "tags": ["Sci-Fi", "Politics", "Ecology"],
+    "publisher": "Chilton Books",
+    "yearOfPublishing": 1965
+  },
+  {
+    "bookId": 5,
+    "bookName": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez",
+    "image": "./id-5.jpg",
+    "review": "A magical realist masterpiece exploring the rise and fall of a family and a town over generations. A captivating and unforgettable story.",
+    "totalPages": 472,
+    "rating": 4.7,
+    "category": "Magical Realism",
+    "tags": ["Family Saga", "Magical Realism", "History"],
+    "publisher": "Editorial Sudamericana",
+    "yearOfPublishing": 1967
+  },
+
+  {
+    "bookId": 6,
+    "bookName": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "image": "./id-6.jpg",
+    "review": "A hilarious and irreverent science fiction comedy following the adventures of Arthur Dent after the Earth is destroyed.",
+    "totalPages": 192,
+    "rating": 4.2,
+    "category": "Science Fiction",
+    "tags": ["Comedy", "Sci-Fi", "Satire"],
+    "publisher": "Pan Books",
+    "yearOfPublishing": 1979
+  },
+  {
+    "bookId": 7,
+    "bookName": "1984",
+    "author": "George Orwell",
+    "image": "./id-7.jpg",
+    "review": "A chilling dystopian novel exploring themes of totalitarianism, surveillance, and censorship.",
+    "totalPages": 310,
+    "rating": 4.4,
+    "category": "Dystopian Fiction",
+    "tags": ["Dystopian", "Political Fiction", "Totalitarianism"],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949
+  },
+  {
+    "bookId": 8,
+    "bookName": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "image": "./id-8.jpg",
+    "review": "A coming-of-age story exploring themes of love, social class, and female independence.",
+    "totalPages": 408,
+    "rating": 4.3,
+    "category": "Classic Literature",
+    "tags": ["Coming-of-Age", "Romance", "Classics"],
+    "publisher": "Smith, Elder & Co.",
+    "yearOfPublishing": 1847
+  },
+  {
+    "bookId": 9,
+    "bookName": "The Great Gatsby",
+
+    "author": "F. Scott Fitzgerald",
+    "image": "./id-9.jpg",
+    "review": "A poignant exploration of the American Dream, wealth, and the Jazz Age in the Roaring Twenties.",
+    "totalPages": 180,
+    "rating": 4.1,
+    "category": "Classic Literature",
+    "tags": ["American Literature", "Social Commentary", "Jazz Age"],
+    "publisher": "Charles Scribner's Sons",
+    "yearOfPublishing": 1925
+  }
+]
