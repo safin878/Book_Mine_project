@@ -8,26 +8,18 @@ const NavBar = () => {
           <Link> Book Mine </Link>
         </div>
         <div className="flex">
-          <ul className="flex gap-5">
+          <ul className="flex gap-5 items-center">
             <li className="">
-              <NavLink to="/home">
-                <button className="btn btn-outline text-primary-color hover:bg-primary-color hover:border-primary-color">
-                  Home
-                </button>
+              <NavLink to="/">
+                <button>Home</button>
               </NavLink>
             </li>
             <li className="">
-              <NavLink to="/listed">
-                <button className="btn btn-outline text-primary-color hover:bg-primary-color hover:border-primary-color">
-                  Listed Books
-                </button>
-              </NavLink>
+              <NavLink to="/listed">Listed Books</NavLink>
             </li>
             <li className="">
-              <NavLink to="/pages">
-                <button className="btn btn-outline text-primary-color hover:bg-primary-color hover:border-primary-color">
-                  Pages to Read
-                </button>
+              <NavLink to="/pages" className="">
+                Pages to Read
               </NavLink>
             </li>
           </ul>
