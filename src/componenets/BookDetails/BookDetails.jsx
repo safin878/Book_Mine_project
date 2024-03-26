@@ -1,10 +1,16 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const BookDetails = () => {
   const book = useLoaderData();
   const { bookId } = useParams();
 
   const boo = book.find((book) => book.bookId === parseInt(bookId));
   console.log(boo);
+
+  const toster = () => {
+    toast.success("Books Added To Read List");
+  };
 
   return (
     <div className="container mx-auto">
@@ -57,10 +63,13 @@ const BookDetails = () => {
             </div>
           </div>
           <div className="flex gap-3 my-3">
-            <button className="btn bg-white border rounded-lg">Read</button>
+            <button onClick={toster} className="btn bg-white border rounded-lg">
+              Read
+            </button>
             <button className="btn bg-secondary-color">Wishlist</button>
           </div>
         </div>
+        <ToastContainer />
       </div>
     </div>
   );

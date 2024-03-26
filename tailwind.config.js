@@ -7,6 +7,7 @@ export default {
         "primary-color": "#23BE0A",
         "secondary-color": "#59C6D2",
         "op-color": "#1313130c",
+        "opp-color": "#1313130D",
       },
     },
   },

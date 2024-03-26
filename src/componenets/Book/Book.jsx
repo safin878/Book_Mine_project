@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./Book.css";
 
 const Book = ({ book }) => {
   const { image, tags, bookName, author, category, rating, bookId } = book;
   return (
     <div>
-      <Link to={`./book/${bookId}`}>
+      <NavLink to={`./book/${bookId}`}>
         <div className="card w-96 bg-base-100 shadow-xl ">
           <figure>
             <img src={image} alt="" />
@@ -28,7 +29,7 @@ const Book = ({ book }) => {
             </div>
           </div>
         </div>
-      </Link>
+      </NavLink>
     </div>
   );
 };
