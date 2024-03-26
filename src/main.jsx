@@ -6,6 +6,7 @@ import Home from "./componenets/Home/Home";
 import ListedBooks from "./componenets/ListedBooks/ListedBooks";
 import PagesToRead from "./componenets/PagesToRead/PagesToRead";
 import Root from "./componenets/Root/Root";
+import BookDetails from "./componenets/BookDetails/BookDetails";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
       {
         path: "/pages",
         element: <PagesToRead></PagesToRead>,
+      },
+      {
+        path: "/book/:bookId",
+        loader: () => fetch("./books.json"),
+        element: <BookDetails></BookDetails>,
       },
     ],
   },
