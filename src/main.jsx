@@ -7,6 +7,8 @@ import ListedBooks from "./componenets/ListedBooks/ListedBooks";
 import PagesToRead from "./componenets/PagesToRead/PagesToRead";
 import Root from "./componenets/Root/Root";
 import BookDetails from "./componenets/BookDetails/BookDetails";
+import ReadBooks from "./componenets/ReadBooks/ReadBooks";
+import Whishbooks from "./componenets/Whishbooks/Whishbooks";
 
 const router = createBrowserRouter([
   {
@@ -15,12 +17,23 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        loader: () => fetch("./books.json"),
+        loader: () => fetch("/books.json"),
         element: <Home></Home>,
       },
       {
         path: "/listed",
         element: <ListedBooks></ListedBooks>,
+        children: [
+          {
+            path: "/listed",
+            loader: () => fetch("/books.json"),
+            element: <ReadBooks></ReadBooks>,
+          },
+          {
+            path: "/listed/wb",
+            element: <Whishbooks></Whishbooks>,
+          },
+        ],
       },
       {
         path: "/pages",
@@ -28,9 +41,14 @@ const router = createBrowserRouter([
       },
       {
         path: "/book/:bookId",
-        loader: () => fetch("./books.json"),
+        loader: () => fetch("/books.json"),
         element: <BookDetails></BookDetails>,
       },
+      // {
+      //   path: "/read",
+      //   loader: () => fetch("./books.json"),
+      //   element: <ReadBooks></ReadBooks>,
+      // },
     ],
   },
 ]);

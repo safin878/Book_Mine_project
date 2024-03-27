@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import { saveBookRead } from "../../utility/localstorage";
 import "react-toastify/dist/ReactToastify.css";
 const BookDetails = () => {
   const book = useLoaderData();
@@ -9,6 +10,7 @@ const BookDetails = () => {
   console.log(boo);
 
   const toster = () => {
+    saveBookRead(parseInt(bookId));
     toast.success("Books Added To Read List");
   };
 
