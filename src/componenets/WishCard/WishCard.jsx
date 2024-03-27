@@ -1,7 +1,7 @@
 import { GoPeople } from "react-icons/go";
 import { VscBook } from "react-icons/vsc";
 import { MdOutlineLocationOn } from "react-icons/md";
-const ReadCard = ({ bookread }) => {
+const WishCard = ({ wishread }) => {
   const {
     img,
     bookName,
@@ -12,7 +12,7 @@ const ReadCard = ({ bookread }) => {
     publisher,
     yearOfPublishing,
     rating,
-  } = bookread;
+  } = wishread;
   return (
     <div>
       <div className="hero  bg-base-200 grid justify-start ">
@@ -76,4 +76,4 @@ const ReadCard = ({ bookread }) => {
   );
 };
 
-export default ReadCard;
+export default WishCard;

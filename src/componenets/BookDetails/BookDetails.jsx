@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { saveBookRead } from "../../utility/localstorage";
+import { saveBookWish } from "../../utlity2/localstorage2";
 import "react-toastify/dist/ReactToastify.css";
 const BookDetails = () => {
   const book = useLoaderData();
@@ -13,7 +14,10 @@ const BookDetails = () => {
     saveBookRead(parseInt(bookId));
     toast.success("Books Added To Read List");
   };
-
+  const tosterw = () => {
+    saveBookWish(parseInt(bookId));
+    toast.success("Books Added To Wishlist");
+  };
   return (
     <div className="container mx-auto">
       <div className="flex justify-between gap-5">
@@ -65,10 +69,15 @@ const BookDetails = () => {
             </div>
           </div>
           <div className="flex gap-3 my-3">
-            <button onClick={toster} className="btn bg-white border rounded-lg">
+            <button
+              onClick={toster}
+              className="btn bg-white border rounded-lg hover:bg-primary-color hover:text-white"
+            >
               Read
             </button>
-            <button className="btn bg-secondary-color">Wishlist</button>
+            <button onClick={tosterw} className="btn bg-secondary-color">
+              Wishlist
+            </button>
           </div>
         </div>
         <ToastContainer />
