@@ -9,10 +9,12 @@ import Root from "./componenets/Root/Root";
 import BookDetails from "./componenets/BookDetails/BookDetails";
 import ReadBooks from "./componenets/ReadBooks/ReadBooks";
 import Whishbooks from "./componenets/Whishbooks/Whishbooks";
+import ErrorPage from "./componenets/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    errorElement: <ErrorPage></ErrorPage>,
     element: <Root></Root>,
     children: [
       {
@@ -38,6 +40,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/pages",
+        loader: () => fetch("/books.json"),
         element: <PagesToRead></PagesToRead>,
       },
       {

@@ -8,7 +8,7 @@ const BookDetails = () => {
   const { bookId } = useParams();
 
   const boo = book.find((book) => book.bookId === parseInt(bookId));
-  console.log(boo);
+  // console.log(boo);
 
   const toster = () => {
     saveBookRead(parseInt(bookId));

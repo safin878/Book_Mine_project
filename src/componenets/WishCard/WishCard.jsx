@@ -1,6 +1,7 @@
 import { GoPeople } from "react-icons/go";
 import { VscBook } from "react-icons/vsc";
 import { MdOutlineLocationOn } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 const WishCard = ({ wishread }) => {
   const {
     img,
@@ -65,9 +66,11 @@ const WishCard = ({ wishread }) => {
               <p className="bg-bt3-color border rounded-lg p-1 text-bt4-color">
                 Rating:<span className="mx-2">{rating}</span>
               </p>
-              <button className="bg-primary-color border rounded-lg p-1 text-white">
-                View Detailes
-              </button>
+              <NavLink to="">
+                <button className="bg-primary-color border rounded-lg p-1 text-white">
+                  View Details
+                </button>
+              </NavLink>
             </div>
           </div>
         </div>

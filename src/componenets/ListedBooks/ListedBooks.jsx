@@ -1,6 +1,6 @@
 import DropDown from "../DropDown/DropDown";
 import NavBar2 from "../NavBar2/NavBar2";
-import ReadBooks from "../ReadBooks/ReadBooks";
+// import ReadBooks from "../ReadBooks/ReadBooks";
 import { Outlet } from "react-router-dom";
 
 const ListedBooks = () => {
@@ -12,7 +12,6 @@ const ListedBooks = () => {
 
       <DropDown></DropDown>
       <NavBar2></NavBar2>
-
       <Outlet></Outlet>
     </div>
   );
