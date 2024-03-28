@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="container mx-auto bg-op-color py-20 p-5  border  rounded-3xl flex justify-around items-center">
+    <div className="lg:container mx-auto bg-op-color py-20 p-5  border  rounded-3xl flex justify-around items-center ">
       <div>
-        <h1 className="text-6xl playfair-display">
+        <h1 className="text-2xl lg:text-6xl playfair-display">
           Books to freshen up <br />
           your bookshelf
         </h1>
@@ -12,7 +12,7 @@ const Banner = () => {
           <NavLink to="/listed">View The List</NavLink>
         </button>
       </div>
-      <div>
+      <div className="">
         <img src="./bannerpic.png" alt="" />
       </div>
     </div>
